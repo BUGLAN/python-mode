@@ -26,10 +26,10 @@ else
 endif
 
 " Disable pymode warnings
-call pymode#default('g:pymode_warning', 1)
+" call pymode#default('g:pymode_warning', 1)
 
 " Additional python paths
-call pymode#default('g:pymode_paths', [])
+" call pymode#default('g:pymode_paths', [])
 
 " Python documentation support
 call pymode#default('g:pymode_doc', 1)
@@ -41,119 +41,119 @@ call pymode#default("g:pymode_indent", 1)
 " TODO: currently folding suffers from a bad performance and incorrect
 " implementation. This feature should be considered experimental.
 " Enable/disable pymode folding for pyfiles.
-call pymode#default("g:pymode_folding", 0)
+" call pymode#default("g:pymode_folding", 0)
 " Maximum file length to check for nested class/def statements
-call pymode#default("g:pymode_folding_nest_limit", 1000)
+" call pymode#default("g:pymode_folding_nest_limit", 1000)
 " Change for folding customization (by example enable fold for 'if', 'for')
-call pymode#default("g:pymode_folding_regex", '^\s*\%(class\|def\|async\s\+def\) .\+\(:\s\+\w\)\@!')
+" call pymode#default("g:pymode_folding_regex", '^\s*\%(class\|def\|async\s\+def\) .\+\(:\s\+\w\)\@!')
 " call pymode#default("g:pymode_folding_regex", '^\s*\%(class\|def\|async\s\+def\)')
 
 " Enable/disable python motion operators
-call pymode#default("g:pymode_motion", 1)
+" call pymode#default("g:pymode_motion", 1)
 
 " Auto remove unused whitespaces on save
-call pymode#default("g:pymode_trim_whitespaces", 1)
+" call pymode#default("g:pymode_trim_whitespaces", 1)
 
 " Set recomended python options
-call pymode#default("g:pymode_options", 1)
-call pymode#default("g:pymode_options_max_line_length", 79)
-call pymode#default("g:pymode_options_colorcolumn", 1)
+" call pymode#default("g:pymode_options", 1)
+" call pymode#default("g:pymode_options_max_line_length", 79)
+" call pymode#default("g:pymode_options_colorcolumn", 1)
 
 " Enable/disable vertical display of python documentation
-call pymode#default("g:pymode_doc_vertical", 0)
+" call pymode#default("g:pymode_doc_vertical", 0)
 
 " Minimal height of pymode quickfix window
-call pymode#default('g:pymode_quickfix_maxheight', 6)
+" call pymode#default('g:pymode_quickfix_maxheight', 6)
 
 " Maximal height of pymode quickfix window
-call pymode#default('g:pymode_quickfix_minheight', 3)
+" call pymode#default('g:pymode_quickfix_minheight', 3)
 
 " LOAD VIRTUALENV {{{
 "
 " Enable virtualenv support
-call pymode#default('g:pymode_virtualenv', 1)
+" call pymode#default('g:pymode_virtualenv', 1)
 
 " Get path to virtualenv (by default take from shell)
-call pymode#default('g:pymode_virtualenv_path', $VIRTUAL_ENV)
+" call pymode#default('g:pymode_virtualenv_path', $VIRTUAL_ENV)
 
 " Service variable (don't set it manually)
-call pymode#default('g:pymode_virtualenv_enabled', '')
+" call pymode#default('g:pymode_virtualenv_enabled', '')
 
 " }}}
 
 " RUN PYTHON {{{
 "
 " Enable code running support
-call pymode#default('g:pymode_run', 1)
+" call pymode#default('g:pymode_run', 1)
 
 " Key's map for run python code
-call pymode#default('g:pymode_run_bind', '<leader>r')
+" call pymode#default('g:pymode_run_bind', '<leader>r')
 
 " }}}
 
 " CHECK CODE {{{
 "
 " Code checking
-call pymode#default('g:pymode_lint', 1)
+" call pymode#default('g:pymode_lint', 1)
 
 " Check code asynchronously
-call pymode#default('g:pymode_lint_async', 1)
-call pymode#default('g:pymode_lint_async_updatetime', 1000)
+" call pymode#default('g:pymode_lint_async', 1)
+" call pymode#default('g:pymode_lint_async_updatetime', 1000)
 
 " Check code every save if file has been modified
-call pymode#default("g:pymode_lint_on_write", 1)
+" call pymode#default("g:pymode_lint_on_write", 1)
 
 " Check code every save (every)
-call pymode#default("g:pymode_lint_unmodified", 0)
+" call pymode#default("g:pymode_lint_unmodified", 0)
 
 " Check code on fly
-call pymode#default("g:pymode_lint_on_fly", 0)
+" call pymode#default("g:pymode_lint_on_fly", 0)
 
 " Show message about error in command line
-call pymode#default("g:pymode_lint_message", 1)
+" call pymode#default("g:pymode_lint_message", 1)
 
 " Choices are: pylint, pyflakes, pep8, mccabe and pep257
-call pymode#default("g:pymode_lint_checkers", ['pyflakes', 'pep8', 'mccabe'])
+" call pymode#default("g:pymode_lint_checkers", ['pyflakes', 'pep8', 'mccabe'])
 
 " Skip errors and warnings (e.g. E4,W)
-call pymode#default("g:pymode_lint_ignore", [])
+" call pymode#default("g:pymode_lint_ignore", [])
 
 " Select errors and warnings (e.g. E4,W)
-call pymode#default("g:pymode_lint_select", [])
+" call pymode#default("g:pymode_lint_select", [])
 
 " Auto open cwindow if any errors has been finded
-call pymode#default("g:pymode_lint_cwindow", 1)
+" call pymode#default("g:pymode_lint_cwindow", 1)
 
 " If not emply, errors will be sort by defined relevance
 " E.g. let g:pymode_lint_sort = ['E', 'C', 'I']  " Errors first 'E',
 " after them 'C' and ...
-call pymode#default("g:pymode_lint_sort", [])
+" call pymode#default("g:pymode_lint_sort", [])
 
 " Place error signs
-call pymode#default("g:pymode_lint_signs", 1)
+" call pymode#default("g:pymode_lint_signs", 1)
 
 " Symbol's definitions
-call pymode#default("g:pymode_lint_todo_symbol", "WW")
-call pymode#default("g:pymode_lint_docs_symbol", "DD")
-call pymode#default("g:pymode_lint_comment_symbol", "CC")
-call pymode#default("g:pymode_lint_visual_symbol", "RR")
-call pymode#default("g:pymode_lint_error_symbol", "EE")
-call pymode#default("g:pymode_lint_info_symbol", "II")
-call pymode#default("g:pymode_lint_pyflakes_symbol", "FF")
+" call pymode#default("g:pymode_lint_todo_symbol", "WW")
+" call pymode#default("g:pymode_lint_docs_symbol", "DD")
+" call pymode#default("g:pymode_lint_comment_symbol", "CC")
+" call pymode#default("g:pymode_lint_visual_symbol", "RR")
+" call pymode#default("g:pymode_lint_error_symbol", "EE")
+" call pymode#default("g:pymode_lint_info_symbol", "II")
+" call pymode#default("g:pymode_lint_pyflakes_symbol", "FF")
 
 " Code checkers options
 " TODO: check if most adequate name name is pep8 or pycodestyle.
-call pymode#default("g:pymode_lint_options_pep8",
-    \ {'max_line_length': g:pymode_options_max_line_length})
+" call pymode#default("g:pymode_lint_options_pep8",
+    " \ {'max_line_length': g:pymode_options_max_line_length})
 
-call pymode#default("g:pymode_lint_options_pylint",
-    \ {'max-line-length': g:pymode_options_max_line_length})
+" call pymode#default("g:pymode_lint_options_pylint",
+    " \ {'max-line-length': g:pymode_options_max_line_length})
 
-call pymode#default("g:pymode_lint_options_mccabe",
-    \ {'complexity': 12})
+" call pymode#default("g:pymode_lint_options_mccabe",
+    " \ {'complexity': 12})
 
-call pymode#default("g:pymode_lint_options_pep257", {})
-call pymode#default("g:pymode_lint_options_pyflakes", { 'builtins': '_' })
+" call pymode#default("g:pymode_lint_options_pep257", {})
+" call pymode#default("g:pymode_lint_options_pyflakes", { 'builtins': '_' })
 
 
 " }}}
@@ -162,13 +162,13 @@ call pymode#default("g:pymode_lint_options_pyflakes", { 'builtins': '_' })
 "
 
 " Create/remove breakpoints
-call pymode#default('g:pymode_breakpoint', 1)
+" call pymode#default('g:pymode_breakpoint', 1)
 
 " Key's map for add/remove breakpoint
-call pymode#default('g:pymode_breakpoint_bind', '<leader>b')
+" call pymode#default('g:pymode_breakpoint_bind', '<leader>b')
 
 " Default pattern for making breakpoints. Leave this empty for auto search available debuggers (pdb, ipdb, ...)
-call pymode#default('g:pymode_breakpoint_cmd', '')
+" call pymode#default('g:pymode_breakpoint_cmd', '')
 
 " }}}
 
@@ -191,11 +191,11 @@ if g:pymode_rope
     call pymode#default('g:pymode_rope_lookup_project', 0)
 
     " Enable Rope completion
-    call pymode#default('g:pymode_rope_completion', 1)
+    " call pymode#default('g:pymode_rope_completion', 1)
 
     " Complete keywords from not imported modules (could make completion slower)
     " Enable autoimport used modules
-    call pymode#default('g:pymode_rope_autoimport', 0)
+    " call pymode#default('g:pymode_rope_autoimport', 0)
 
     " Offer to import object after complete (if that not be imported before)
     call pymode#default('g:pymode_rope_autoimport_import_after_complete', 0)
